@@ -154,6 +154,7 @@ ul#menuUl li {
 #hbItem1 h2{
 font-size: 1.1rem;
 margin: 1px;
+vertical-align: top;
 }
 
 #hbItem2 {
@@ -161,6 +162,5 @@ margin: 1px;
     margin-left: 20px;
     width: 49.4%;
     height: 100%;
-    background-size: cover;
     background-image: url(img/ecred-hero-d-7f589a9fbfb06b503aa132c5f8c636ce.png);
 }
