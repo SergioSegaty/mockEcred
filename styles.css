@@ -6,8 +6,37 @@ body {
     align-items: center;
 }
 
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: inherit;
+    width: 100%;
+}
+
+#main h1 {
+    font-weight: bolder;
+    font-size: 2.3rem;
+    letter-spacing: -1px;
+    color: #4e4e4e;
+}
+
+#main .vantagens {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+#main .vantagens .vantagensBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .bg {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     background: rgb(109, 191, 104);
@@ -42,7 +71,7 @@ body {
 .headerItem {
     background-color: transparent;
     font-family: inherit;
-    width: 60%;
+    width: 77%;
     height: 50px;
     margin-top: 15px;
     display: flex;
@@ -126,11 +155,11 @@ ul#menuUl li {
 }
 
 .menu {
-    width: 65%;
+    width: 82%;
 }
 
 .headerBox {
-    width: 54%;
+    width: 74%;
     height: 500px;
     padding-top: 10px;
     display: flex;
@@ -150,20 +179,60 @@ ul#menuUl li {
     padding-top: 0;
     margin-top: 0;
 }
-#hbItem1 h1{
+
+#hbItem1 h1 {
     margin: 0;
 }
 
-#hbItem1 h2{
-font-size: 1.1rem;
-margin: 1px;
-vertical-align: top;
+#hbItem1 h2 {
+    font-size: 1.125rem;
+    margin: 15px;
+    margin-left: 0;
+    vertical-align: top;
+}
+
+#hbItem1 .buttonBox {
+    border-radius: 5px;
+    background-color: white;
+    align-self: flex-start;
+    height: 115px;
+    width: 305px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.buttonBox .button {
+    background-color: #CC368A;
+    border-radius: 4px;
+    width: 95%;
+    height: 50px;
+    padding: 2px 10px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.05rem;
+}
+
+.buttonBox .logoBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttonBox p {
+    color: black;
+    font-size: 0.87rem;
 }
 
 #hbItem2 {
     margin-top: -60px;
-    margin-left: 20px;
+    margin-left: 50px;
     width: 49.4%;
     height: 100%;
-    background-image: url(img/ecred-hero-d-7f589a9fbfb06b503aa132c5f8c636ce.png);
 }
