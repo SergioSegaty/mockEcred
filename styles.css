@@ -14,9 +14,9 @@ body {
     width: 100%;
 }
 
-#main h1 {
+h1 {
     font-weight: bolder;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     letter-spacing: -1px;
     color: #4e4e4e;
 }
@@ -26,7 +26,8 @@ body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-evenly;
-    width: 80%;
+    width: 93%;
+    margin-top: 15px;
 }
 
 #main .vantagens .vantagensBox {
@@ -34,10 +35,109 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 23%;
+}
+
+#aprovados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+    height: 200px;
+    width: 100%;
+}
+
+#aprovados .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 4px 4px 31px -14px rgba(0, 0, 0, 0.49);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px 30px;
+    width: 20%;
+}
+
+#aprovados .box h3 {
+    margin: 3px;
+    font-size: 2.5rem;
+    color: rgb(0, 175, 125);
+    font-weight: 700;
+}
+
+#aprovados .box h4 {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: rgb(150, 150, 150);
+    font-weight: 300;
+}
+
+#credito {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#credito ol {
+    width: 100%;
+    counter-reset: li;
+}
+
+#credito ol li {
+    list-style-position: inside;
+    list-style-type: none;
+    width: 90%;
+    padding-bottom: 10%;
+    font-size: 2rem;
+    font-weight: 800;
+    counter-increment: li;
+}
+
+#credito ol li::before {
+    content: counter(li);
+    color: rgb(0, 175, 125);
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+#credito ol li::after {
+    content: " ";
+    border-bottom: 2px solid rgb(0, 175, 125);
+    width: 30%;
+    position: relative;
+}
+
+#credito #creditoContainer {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    align-items: center;
+}
+
+#credito .creditoBox {
+    height: 120px;
+    background-color: white;
+    box-shadow: 4px 4px 31px -14px rgba(0, 0, 0, 0.49);
+    padding: 5px;
+    margin: 10px 20px;
+}
+
+.boxLista {
+    width: 40%;
+}
+
+.vantagensBox h3 {
+    margin: 0;
 }
 
 .vantagensBox p {
-    width: 80%;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .bg {
@@ -53,16 +153,6 @@ body {
     z-index: -1;
 }
 
-.grid {
-    display: flex;
-}
-
-.gridItem1 {
-    background-color: red;
-    height: 500px;
-    width: 503px;
-}
-
 .header {
     background-color: transparent;
     width: 100%;
@@ -71,6 +161,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    font-size: 1.125rem;
 }
 
 .headerItem {
@@ -110,6 +201,7 @@ body {
     width: 150px;
     font-family: inherit;
     font-weight: bold;
+    font-size: 1rem;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -148,10 +240,9 @@ body {
 }
 
 #menuUl {
-    list-style-type: none;
     font-family: inherit;
     color: white;
-    font-size: 0.87rem;
+    font-size: 1.125rem;
 }
 
 ul#menuUl li {
