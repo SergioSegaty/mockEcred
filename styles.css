@@ -83,6 +83,10 @@ h1 {
     justify-content: center;
 }
 
+#credito:nth-child(2) {
+    z-index: 2;
+}
+
 #credito ol {
     width: 100%;
     counter-reset: li;
@@ -119,12 +123,20 @@ h1 {
     align-items: center;
 }
 
+.boxLista.img {
+    display: unset;
+    width: 120%;
+    background-size: cover;
+    background-image: url(https://www.serasa.com.br/assets/octopus/2.1.79/_next/static/images/mock-passos-desktop-ed8e073f91b8c1c9cc55dd70e7c4527f.png);
+}
+
 #credito .creditoBox {
     height: 120px;
     background-color: white;
     box-shadow: 4px 4px 31px -14px rgba(0, 0, 0, 0.49);
     padding: 5px;
-    margin: 10px 20px;
+    margin: 50px 20px;
+    z-index: 5;
 }
 
 .boxLista {
